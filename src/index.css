@@ -1,4 +1,8 @@
 
+body{
+  height: 100vh;
+  background-color: #f3f2ef;
+}
 body, ul,h1, h2, p, a{
   color:#121212;
   padding: 0;

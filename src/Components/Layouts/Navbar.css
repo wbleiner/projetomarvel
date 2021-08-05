@@ -1,0 +1,106 @@
+.Header {
+    box-sizing      : border-box;
+    display         : flex;
+    background-color: #e7e7e7;
+    justify-content : space-between;
+    padding         : 1.2rem;
+    height          : 70px;
+
+    align-items: center;
+}
+
+.Navbar {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    font-size: 1.4rem;
+
+}
+
+.Menu {
+    font-size: 1.4rem;
+
+    display    : flex;
+    gap        : .5rem;
+    font-size  : 1.4rem;
+    align-items: center;
+}
+
+.Header a {
+    display: block;
+    padding: .7rem;
+}
+
+a:hover {
+    background-color: rgba(0, 0, 0, .07);
+}
+
+.Menu input:focus {
+    outline: none;
+}
+
+.Btn-Mobile {
+    background-color: transparent;
+    border          : none;
+    color           : #121212;
+    cursor          : pointer;
+    display         : none;
+}
+
+@media(max-width: 700px) {
+    .Btn-Mobile {
+        display: block;
+    }
+
+    .Menu {
+        display   : block;
+        position  : absolute;
+        width     : 100%;
+        top       : 60px;
+        right     : 0px;
+        background: #e7e7e7;
+        transition: 0.5s;
+        z-index   : 1000;
+        height    : 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    .Menu li {
+        text-align   : center;
+        padding      : 1rem, 0;
+        margin       : 0 1rem;
+        border-bottom: 2px solid #121212;
+    }
+
+    .Menu input {
+        padding: 1rem, 0;
+        margin : 0, 1rem;
+        
+
+    }
+}
+
+.Active {
+    height     : calc(100vh - 60px);
+    visibility : visible;
+    overflow-y : auto;
+    align-items: center;
+
+}
+
+.SearchBox {
+display: block;
+    align-content: center;
+    width : 100%;
+    height: 100%;
+    font-size: large;
+}
+
+.search {
+    display: flex;
+
+
+
+}
+
