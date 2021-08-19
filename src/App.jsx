@@ -1,13 +1,14 @@
+import React from 'react';
 
 import './App.css';
 import Navbar from './Components/Layouts/Navbar';
-import Home from './Views/Home'
+import Content from './Components/Layouts/Content';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <Navbar/>
-      <Home/>
+      <Navbar />
+      <Content />
     </div>
   );
 }

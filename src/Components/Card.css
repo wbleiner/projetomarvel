@@ -1,19 +1,25 @@
 .Card {
-    display       : flex;
-    flex-direction: column;
-    align-items   : center;
-    max-width     : 250px;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    max-width      : 250px;
     justify-content: center;
-    overflow     : hidden;
-    text-align: center;
-    
+    overflow       : hidden;
+    text-align     : center;
+    cursor         : pointer;
+    transition     : .5s;
+
 }
 
-.Card > img {
+.Card>img {
     max-width: 100%;
 }
 
-.Card >p{
+.Card>p {
     padding-top: 10px;
-    height: 1.8rem;
+    height     : 1.8rem;
+}
+
+.Card:hover {
+    transform: translateY(-1.1rem)
 }

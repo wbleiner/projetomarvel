@@ -4,14 +4,15 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { BiSearchAlt } from 'react-icons/bi'
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     const [menu, setMenu] = useState('')
     return (
         <header className="Header">
-            <a href="/">
-                <h1>Logo</h1>
-            </a>
+            <Link to ="/">
+               <img src="../marvel.png" alt="logo marvel" width="120px" />
+            </Link>
             <nav className="Navbar">
                 <div className="search">
                     <input className="SearchBox" type="search" />
@@ -21,11 +22,12 @@ function Navbar() {
                     {!menu ? <AiOutlineMenu size={29} /> : <AiOutlineClose size={29} />}
                 </button>
                 <ul className={`Menu ${menu}`} >
-                    <li><a href="/">Characters</a></li>
-                    <li><a href="/">Comics</a></li>
-                    <li><a href="/">Creators</a></li>
-                    <li><a href="/">Events</a></li>
-                    <li><a href="/">Series</a></li>
+
+                    <li><Link to="/character/123">Characters</Link></li>
+                    <li><Link to="/">Comics</Link></li>
+                    <li><Link to="/">Creators</Link></li>
+                    <li><Link to="/">Events</Link></li>
+                    <li><Link to="/">Series</Link></li>
 
                 </ul>
 
