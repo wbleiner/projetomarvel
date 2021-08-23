@@ -1,3 +1,14 @@
-.ImageProfile{
+.Profile {
+    padding: 0px 20px 20px 20px;
+    display              : flex;
+    align-items          : center;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 20px;
+    border-bottom: 1px solid #121212;
+    
+}
+.ImageProfile {
+    width: 40%;
     border-radius: 50%;
 }

@@ -1,8 +1,6 @@
 .Home{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: 0 auto;
-  max-width: 800px;
   gap: 20px;
-  padding-top: 50px;
+
 }
